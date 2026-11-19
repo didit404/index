@@ -1,0 +1,38 @@
+# =============================================
+# PISTACHIO PRESTIGE - .gitignore
+# =============================================
+
+# File konfigurasi database (berisi password)
+# Jangan upload ke GitHub! Buat koneksi.php sendiri di server tujuan.
+koneksi.php
+
+# Folder hasil upload pembayaran user (file pribadi)
+uploads/proofs/
+uploads/orders.json
+
+# Pastikan folder uploads tetap ada di repo (tapi isinya tidak)
+!uploads/.gitkeep
+!uploads/proofs/.gitkeep
+
+# File log & cache sistem
+*.log
+*.cache
+*.tmp
+
+# File editor & IDE
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# File PHP yang di-generate / temporary
+*.swp
+*.swo
+
+# Node modules (kalau ada)
+node_modules/
+
+# Environment variables
+.env
+.env.local
